@@ -38,5 +38,10 @@ return [
             "url" => "test",
             "title" => "Test sida",
         ],
+        [
+            "text" => "3 column style",
+            "url" => "threecol",
+            "title" => "Test för 3st column",
+        ],
     ],
 ];

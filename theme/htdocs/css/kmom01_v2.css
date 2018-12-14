@@ -1,0 +1,195 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+/* Hide submenu, leave this to kmom02 */
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+html {
+  overflow-y: scroll;
+  background-color: #193666;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #194d66;
+  font: 100.01%/1 serif;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+.rm-desktop ul {
+  display: none;
+}
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+  display: none;
+}
+.wrap-all {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+}
+.column.footer-column {
+  width: 31%;
+  float: left;
+  padding-left: 5px;
+  border: 1px solid black;
+  margin: 5px;
+}
+.region-header a {
+  float: left;
+}
+.region-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.region-header li {
+  float: left;
+}
+.region-header:hover > ul {
+  display: block;
+}
+.region-header li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.article {
+  padding-left: 5px;
+}
+.figure.right {
+  float: right;
+}
+.site-logo {
+  display: none;
+}
+.site-logo-text {
+  display: none;
+}
+.block.toc {
+  padding-left: 10px;
+}
+.byline {
+  overflow: auto;
+  width: 90%;
+  margin: 0 auto;
+  height: 110px;
+  border: 2px solid grey;
+  display: block;
+  overflow-y: hidden;
+  padding-left: 10px;
+}
+.byline img {
+  width: 100px;
+  height: 100px;
+  float: right;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+/**
+ * Navbar
+ */
+@media screen and (max-width: 700px) {
+  .rm-desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .rm-desktop a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .region-header-col-1,
+  .region-header-col-3 {
+    width: 15%;
+  }
+  .region-header-col-2 {
+    width: 70%;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */
